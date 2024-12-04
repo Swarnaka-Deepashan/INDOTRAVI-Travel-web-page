@@ -11,7 +11,7 @@ const Nav = () => {
               <ul className='absolute shadow-md left-1/2 transform -translate-x-1/2 flex items-center justify-center py-3 px-6 gap-16 max-lg:hidden backdrop-blur-md bg-white/30 rounded-full'>
                   {navLinks.map((item) => (
                       <li key={item.label}>
-                          <a href={item.href} className='text-lg leading-normal font-normal text-slate-gray'>
+                          <a href={item.href} className='text-base leading-normal font-normal text-white-400'>
                               {item.label}
                           </a>
                       </li>

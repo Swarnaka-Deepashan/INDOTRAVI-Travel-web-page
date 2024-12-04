@@ -15,6 +15,11 @@ import search from './search.svg'
 import sms from './sms.svg'
 import flash from './flash.svg'
 import explore from './explore.svg'
+import date from './date.svg'
+import budget from './budget.svg'
+import guest from './guest.svg'
+import chevronDown from './chevron-down.svg'
+import verticalDivider from './vertical-divider.svg'
 
 export {
     arrowRight,
@@ -33,5 +38,10 @@ export {
     sms,
     flash,
     explore,
-    arrowRightBlack
+    arrowRightBlack,
+    date,
+    budget,
+    guest,
+    chevronDown,
+    verticalDivider
 }

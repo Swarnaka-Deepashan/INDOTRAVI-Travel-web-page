@@ -1,12 +1,12 @@
 import PackagesCard from "../components/PackagesCard"
 import { packageDetails } from "../constants"
-
+import Button from "../components/Button"
 
 const Packages = () => {
   return (
     <section id="packages" className="max-container">
 
-      <div className="flex flex-col gap-6">
+      <div className="flex flex-col gap-6 ">
 
         <div className="flex justify-between items-end max-lg:flex-col max-lg:items-center max-lg:justify-center">
           <div className='flex flex-col items-start max-lg:items-center'>
@@ -18,14 +18,19 @@ const Packages = () => {
           </p>
         </div>
 
-        <div className="flex mt-2 max-lg:flex-col justify-between items-center gap-6">
+        <div className="flex mt-2 max-sm:flex-col gap-4">
         {packageDetails.map((packageDetail, index)=>(
-                  <div key={index}>
+                  <div key={index} className="flex-1" >
                       <PackagesCard {...packageDetail}/>
                   </div>
               ))
               }
         </div>
+
+        <div className="mt-4 max-sm:mt-1 flex justify-center">
+          <Button label="View More"/>
+        </div>
+
       </div>
     </section>
   )

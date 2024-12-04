@@ -15,7 +15,8 @@ const App = () => {
       <section className="sm:px-24 px-8 sm:py-16 py-12">
         <Tour/>
       </section>
-      <section className="sm:px-24 px-8 sm:py-16 py-12">
+      {/* <section className="sm:px-24 px-8 sm:py-16 py-12"> */}
+      <section className="xl:px-24 px-8 sm:py-24 py-20">
         <Packages/>
       </section>
       <section className="sm:px-24 px-8 sm:py-16 py-12">

@@ -9,9 +9,9 @@ const Blogs = () => {
           <p>Text</p>
           <p>Sub text</p>
         </div>
-        <div className="flex flex-col gap-3">
+        <div className="flex max-lg:flex-col gap-3">
         {blogs.map((blog, index)=>(
-                <div key={index}>
+                <div key={index} className="flex-1">
                     <BlogCard {...blog}/>
                 </div>
             ))
