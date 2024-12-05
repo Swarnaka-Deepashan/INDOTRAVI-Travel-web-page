@@ -10,7 +10,7 @@ const Nav = () => {
           INDOTRAVI
         </p>
 
-        <ul className="absolute shadow-md left-1/2 transform -translate-x-1/2 flex items-center justify-center py-3 px-6 gap-16 max-lg:hidden backdrop-blur-md bg-white/30 rounded-full">
+        {/* <ul className="absolute shadow-md left-1/2 transform -translate-x-1/2 flex items-center justify-center py-3 px-6 gap-16 max-lg:hidden backdrop-blur-md bg-white/30 rounded-full">
           {navLinks.map((item) => (
             <li key={item.label}>
               <a
@@ -21,7 +21,7 @@ const Nav = () => {
               </a>
             </li>
           ))}
-        </ul>
+        </ul> */}
 
         <div className="flex flex-row-reverse gap-3 max-lg:hidden">
           <button className="px-8 py-2 bg-white text-black rounded-3xl hover:bg-gray-800 transition duration-300">
