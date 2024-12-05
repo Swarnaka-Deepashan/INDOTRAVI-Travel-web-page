@@ -18,7 +18,7 @@ const Home = () => {
                 <p className="px-12 text-white text-[2rem] max-lg:text-[3vw] leading-none drop-shadow-2xl mt-4 [@media(max-width:640px)_or_(max-height:640px)]:text-[16px]">Exploring Indonesia is an unforgettable adventure</p>
             </div>
 
-            <div className="">
+            <div className="z-50">
                 <SearchBar/>
             </div>
 
