@@ -1,35 +1,41 @@
 import Nav from "./components/Nav";
-import { Home, Blogs, Footer, Locations, Packages, Reviews, Tour } from "./sections";
-
+import {
+  Home,
+  Blogs,
+  Footer,
+  Locations,
+  Packages,
+  Reviews,
+  Tour,
+} from "./sections";
 
 const App = () => {
   return (
     <main className="relative">
-      <Nav/>
+      <Nav />
+      <section className="sm:pb-32 pb-20">
+        <Home />
+      </section>
+      <section className="xl:px-24 px-10 sm:pb-32 pb-20">
+        <Locations />
+      </section>
+      <section className="xl:px-24 px-10 sm:pb-32 pb-20">
+        <Tour />
+      </section>
+      <section className="xl:px-24 px-10 sm:pb-32 pb-20">
+        <Packages />
+      </section>
+      <section className="xl:px-24 px-10 sm:pb-32 pb-20">
+        <Reviews />
+      </section>
+      <section className="xl:px-24 px-10 sm:pb-32 pb-20">
+        <Blogs />
+      </section>
       <section className="">
-        <Home/>
-      </section>
-      <section className="xl:px-24 px-8 sm:py-24 py-20">
-        <Locations/>
-      </section>
-      <section className="sm:px-24 px-8 sm:py-16 py-12">
-        <Tour/>
-      </section>
-      {/* <section className="sm:px-24 px-8 sm:py-16 py-12"> */}
-      <section className="xl:px-24 px-8 sm:py-24 py-20">
-        <Packages/>
-      </section>
-      <section className="sm:px-24 px-8 sm:py-16 py-12">
-        <Reviews/>
-      </section>
-      <section className="sm:px-24 px-8 sm:py-16 py-12">
-        <Blogs/>
-      </section>
-      <section className="sm:px-24 px-8 sm:py-16 py-12">
-        <Footer/>
+        <Footer />
       </section>
     </main>
-  )
-}
+  );
+};
 
-export default App
+export default App;

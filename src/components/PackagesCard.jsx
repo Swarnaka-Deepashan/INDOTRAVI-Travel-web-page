@@ -30,8 +30,8 @@ const PackagesCard = ({image, label, dateRange, packageName, price, dayCount, ra
       <div className='absolute bottom-4 w-[calc(100%-2rem)] mx-4 flex-col p-2 bg-white/30 backdrop-blur-lg rounded-lg'>
           <p className='font-light text-white'>{dateRange}</p>
           <div className='flex justify-between items-center'>
-            <p className='text-2xl font-semibold text-white'>{packageName}</p>
-            <p className='text-2xl  font-semibold text-white'>{price}</p>
+            <p className='text-2xl max-[400px]:text-xl font-semibold text-white'>{packageName}</p>
+            <p className='text-2xl max-[400px]:text-xl  font-semibold text-white'>{price}</p>
           </div>
       </div>
 

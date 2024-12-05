@@ -144,7 +144,7 @@ export const blogs = [
         label:'blogs02',
         date:'Nov 18, 2022',
         text: 'Jeep Adventure is a new attraction for tourist visiting Gaurt',
-        subtext:"2023 taught us valuable life lessons. Plans don't always work out, flexibility in life is the key 2023 taught us valuable life lessons. Plans don't always work out, flexibility in life is the key taught us valuable "
+        subtext:"2023 taught us valuable life lessons. Plans don't always work out, flexibility in life is the key 2023 taught us valuable life lessons. Plans don't always work out, flexibility in life is the key"
     },
     
 ]

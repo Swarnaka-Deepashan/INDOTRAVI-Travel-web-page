@@ -7,9 +7,11 @@ const Tour = () => {
   return (
     <section id="tour" className="max-container">
       <div className="flex max-lg:flex-col-reverse justify-center items-center gap-10">
+
         <div className="">
           <TourImageCard {...tourImageDetails} />
         </div>
+
         <div className="flex flex-col gap-4">
           <div className='flex flex-col items-start max-lg:items-center'>
             <p className='lg:max-w-lg font-normal text-lg text-slate-gray'>How It Works</p>
@@ -22,6 +24,7 @@ const Tour = () => {
             ))
             }
         </div>
+        
       </div>
     </section>
   )

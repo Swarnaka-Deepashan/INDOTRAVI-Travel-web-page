@@ -19,10 +19,10 @@ const Reviews = () => {
         </div>
         <div className="flex flex-col items-center gap-4">
           <div className="relative max-w-3xl leading-normal text-center text-xl md:text-3xl md:leading-snug lg:text-xl lg:leading-normal lg:text-left xl:text-2xl">
-             {/* Big inverted comma */}
-          <span className="max-lg:hidden absolute top-8 left-0 text-[220px] font-bold font-palanquin opacity-20 text-gray-500 select-none">
-            &ldquo;
-          </span>
+            {/* Big inverted comma */}
+            <span className="max-lg:hidden absolute top-8 left-0 text-[220px] font-bold font-palanquin opacity-20 text-gray-500 select-none">
+              &ldquo;
+            </span>
             <p>{reviews[0].description}</p>
           </div>
           <div className="flex gap-4 lg:hidden">
