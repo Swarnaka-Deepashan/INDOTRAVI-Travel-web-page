@@ -3,7 +3,7 @@ import SearchBarTour from "./SearchBarTour";
 
 const TourImageCard = ({ image, label, text }) => {
   return (
-    <div className="relative max-sm:h-[40vh] max-sm:w-[80vw] sm:h-[60vh] sm:w-[80vw] lg:h-[60vh] lg:w-[35vw] xl:h-[80vh] xl:w-[35vw] rounded-2xl overflow-hidden shadow-lg">
+    <div className="relative max-sm:h-[40vh] max-sm:w-[80vw] sm:h-[60vh] sm:w-[80vw] lg:h-[60vh] lg:w-[35vw] xl:h-[80vh] xl:w-[35vw] rounded-2xl overflow-hidden shadow-lg transition-transform duration-300 ease-in-out transform hover:scale-[102%] hover:shadow-2xl">
       <img src={image} alt={label} className="w-full h-full object-cover" />
       <div className="absolute inset-0 bg-gradient-to-t from-black to-transparent opacity-50"></div>
 

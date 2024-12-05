@@ -3,8 +3,7 @@ import { star } from '../assets/icons';
 
 const PackagesCard = ({image, label, dateRange, packageName, price, dayCount, rating}) => {
   return (
-    // <div className="relative max-sm:h-[20vh] max-sm:w-[90vw] sm:h-[25vh] sm:w-[90vw] lg:h-[65vh] lg:w-[25vw] xl:h-[75vh] xl:w-[25vw] rounded-2xl overflow-hidden shadow-lg">
-    <div className="relative">
+    <div className="relative transition-transform duration-300 ease-in-out transform hover:scale-[102%] hover:shadow-2xl">
 
       <div className=' w-full max-sm:h-[20vh] sm:h-[65vh] md:h-[65vh] lg:h-[65vh] xl:h-[75vh] rounded-2xl overflow-hidden shadow-lg'>
         <img src={image} alt={label} className="w-full h-full object-cover" />

@@ -11,10 +11,10 @@ export const statistics = [
 
 export const navLinks = [
     { href: "#home", label: "Home" },
-    { href: "#about-us", label: "Services" },
-    { href: "#products", label: "Tour" },
-    { href: "#contact-us", label: "About" },
-    { href: "#contact-us", label: "Contact" },
+    { href: "#locations", label: "Services" },
+    { href: "#tour", label: "Tour" },
+    { href: "#packages", label: "About" },
+    { href: "#reviews", label: "Contact" },
 ];
 
 export const locations = [

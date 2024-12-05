@@ -3,8 +3,7 @@ import PropTypes from "prop-types";
 
 const BlogCard = ({ image, label, date, text, subtext }) => {
   return (
-    // <div className="relative overflow-hidden shadow-lg rounded-xl max-md:h-[60vh] md:h-[45vh] lg:h-[70vh] pb-1">
-    <div className="relative overflow-hidden shadow-lg rounded-xl max-md:h-[395px] md:h-[400px] lg:h-[420px]">
+    <div className="relative overflow-hidden shadow-lg rounded-xl max-md:h-[395px] md:h-[400px] lg:h-[420px] transition-transform duration-300 ease-in-out transform hover:scale-[102%] hover:shadow-2xl">
       <div className="h-3/5 ">
         <img src={image} alt={label} className="w-full h-full object-cover" />
       </div>

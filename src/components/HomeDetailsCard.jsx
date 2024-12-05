@@ -9,7 +9,7 @@ export const HomeDetailsCard = ({ value, label }) => {
     //     </div>
     // </div>
 
-    <div className="min-w-[250px] max-w-[400px] rounded-[20px] shadow-2xl px-6 py-4 bg-white transition-all duration-300 hover:shadow-lg">
+    <div className="min-w-[250px] max-w-[400px] rounded-[20px] shadow-2xl px-6 py-4 bg-white transition-transform duration-300 ease-in-out transform hover:scale-[103%] hover:shadow-2xl">
       <div className="flex flex-col justify-center items-center text-center">
         <p className="text-3xl sm:text-4xl lg:text-5xl font-semibold text-gray-800">
           {value}

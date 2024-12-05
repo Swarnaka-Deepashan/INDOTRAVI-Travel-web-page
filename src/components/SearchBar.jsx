@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
 import DatePicker from "react-datepicker";
 import "react-datepicker/dist/react-datepicker.css";
+
 import {
   date,
   budget,
@@ -10,17 +11,16 @@ import {
 } from "../assets/icons";
 
 const SearchBar = () => {
-  const [selectedDate, setSelectedDate] = useState(null); // State for selected date
-  const [showDatePicker, setShowDatePicker] = useState(false); // Toggle date picker
-  const [showBudgetPopup, setShowBudgetPopup] = useState(false); // Toggle budget popup
-  const [budgetRange, setBudgetRange] = useState({ min: 100, max: 1000 }); // Budget range
-  const [showGuestPopup, setShowGuestPopup] = useState(false); // Toggle guest popup
-  const [guestCount, setGuestCount] = useState(1); // Guest count
+  const [selectedDate, setSelectedDate] = useState(null);
+  const [showDatePicker, setShowDatePicker] = useState(false);
+  const [showBudgetPopup, setShowBudgetPopup] = useState(false);
+  const [budgetRange, setBudgetRange] = useState({ min: 100, max: 1000 });
+  const [showGuestPopup, setShowGuestPopup] = useState(false);
+  const [guestCount, setGuestCount] = useState(1);
 
-  // Reset budget range on page reload
   useEffect(() => {
-    setBudgetRange({ min: 100, max: 1000 }); // Reset to default values
-  }, []); // Empty dependency array ensures this runs only once when component mounts
+    setBudgetRange({ min: 100, max: 1000 });
+  }, []);
 
   const toggleDatePicker = () => {
     setShowDatePicker((prev) => !prev);
@@ -52,7 +52,7 @@ const SearchBar = () => {
         <div className="relative flex items-center max-sm:justify-between sm:w-auto">
           <button
             onClick={toggleDatePicker}
-            className="flex items-center justify-between w-full sm:w-auto text-white"
+            className="flex items-center justify-between w-full sm:w-auto text-white hover:text-slate-400 transition duration-300 ease-in-out"
           >
             <img src={date} alt="Date" className="w-4 h-4 sm:ml-4 mr-2" />
             <span className="text-lg">
@@ -85,7 +85,7 @@ const SearchBar = () => {
         <div className="relative flex items-center sm:w-auto">
           <button
             onClick={toggleBudgetPopup}
-            className="flex items-center justify-between w-full sm:w-auto text-white"
+            className="flex items-center justify-between w-full sm:w-auto text-white hover:text-slate-400 transition duration-300 ease-in-out"
           >
             <img src={budget} alt="Budget" className="w-4 h-4 sm:ml-2 mr-2" />
             <span className="text-lg">
@@ -143,7 +143,7 @@ const SearchBar = () => {
         <div className="relative flex items-center sm:w-auto">
           <button
             onClick={toggleGuestPopup}
-            className="flex items-center justify-between w-full sm:w-auto text-white"
+            className="flex items-center justify-between w-full sm:w-auto text-white hover:text-slate-400 transition duration-300 ease-in-out"
           >
             <img src={guest} alt="Guest" className="w-4 h-4 sm:ml-2 mr-2" />
             <span className="text-lg">Guest</span>
@@ -157,7 +157,9 @@ const SearchBar = () => {
               </h3>
               <div className="flex flex-col gap-3">
                 <div className="flex justify-between text-gray-700 text-sm sm:text-base">
-                  <span>{guestCount} Guest{guestCount > 1 ? "s" : ""}</span>
+                  <span>
+                    {guestCount} Guest{guestCount > 1 ? "s" : ""}
+                  </span>
                 </div>
                 <input
                   type="number"

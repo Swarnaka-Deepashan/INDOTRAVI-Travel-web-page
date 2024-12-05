@@ -4,7 +4,7 @@ import ToggleSwitch from "./ToggleSwitch";
 
 const Nav = () => {
   return (
-    <header className="absolute mt-5 z-10 w-full py-4 sm:px-12 px-8 [@media(max-width:640px)_or_(max-height:640px)]:mt-0">
+    <header className="absolute mt-5 z-10 w-full py-6 sm:px-12 px-8 [@media(max-width:640px)_or_(max-height:640px)]:mt-0 ">
       <nav className="relative flex items-center justify-between max-container">
         <p className="font-palanquin text-xl text-white font-semibold">
           INDOTRAVI
@@ -15,7 +15,7 @@ const Nav = () => {
             <li key={item.label}>
               <a
                 href={item.href}
-                className="text-base leading-normal font-normal text-white-400"
+                className="text-base leading-normal font-normal text-white-400 hover:text-slate-300 transition duration-300 ease-in-out"
               >
                 {item.label}
               </a>
@@ -24,15 +24,13 @@ const Nav = () => {
         </ul>
 
         <div className="flex flex-row-reverse gap-3 max-lg:hidden">
-
-          <button className="px-6 py-2 bg-white text-black rounded-3xl hover:bg-gray-800 transition duration-300">
+          <button className="px-6 py-2 bg-white text-black rounded-3xl hover:bg-slate-200 transition duration-300">
             Login
           </button>
 
           <div>
             <ToggleSwitch />
           </div>
-
         </div>
 
         <div className="hidden max-lg:block">
