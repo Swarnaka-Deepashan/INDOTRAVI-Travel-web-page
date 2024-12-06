@@ -1,6 +1,6 @@
 import { locations01, locations02, locations03, locations04, tour01, package01, package02, package03, review01, blogs01, blogs02 } from "../assets/images";
 
-import { search, sms, flash, explore } from "../assets/icons";
+import { search, sms, flash, explore, facebook, instagram, twitter } from "../assets/icons";
 
 export const statistics = [
     { value: '10M+', label: 'Total Customers' },
@@ -59,19 +59,19 @@ export const tourGuide = [
         iconURL:sms,
         label:'icon2',
         text: 'Book a ticket',
-        subtext: 'Embark on a journey to discover your dream destination, where adventure and relaxation await'
+        subtext: 'Reserve your spot to embark on an amazing journey filled with endless wonders filled with endless wonders.'
     },
     {
         iconURL:flash,
         label:'icon3',
         text: 'Make payment',
-        subtext: 'Embark on a journey to discover your dream destination, where adventure and relaxation await'
+        subtext: 'Complete your booking with secure and simple payment, ensuring peace of mind ensuring peace of mind.'
     },
     {
         iconURL:explore,
         label:'icon4',
         text: 'Explore destinations',
-        subtext: 'Embark on a journey to discover your dream destination, where adventure and relaxation await'
+        subtext: 'Discover hidden gems and iconic spots, where adventure and serenity align adventure and serenity align.'
     },
 ];
 
@@ -147,4 +147,53 @@ export const blogs = [
         subtext:"2023 taught us valuable life lessons. Plans don't always work out, flexibility in life is the key 2023 taught us valuable life lessons. Plans don't always work out, flexibility in life is the key"
     },
     
-]
+];
+
+export const footer = {
+    about:['About us', 'Blogs', 'Careers', 'Jobs', 'In Press', 'Gallery'],
+    support:['Contact Us','Online Chat', 'WhatsApp', 'Telegram', 'Ticketing','Call Center'],
+    FAQ:['Account','Booking','Payments','Returns','Privacy Policy','Terms and Condition'],
+    newsLetter:"Don't miss out on the exciting world of travel subscribe now and embark on a journey od discovery with us"
+};
+
+export const socialMedia = [
+    { src: facebook, alt: "facebook logo" },
+    { src: twitter, alt: "twitter logo" },
+    { src: instagram, alt: "instagram logo" },
+];
+
+export const footerLinks = [
+    {
+        title: "About",
+        links: [
+            { name: "About us", link: "/" },
+            { name: "Blogs", link: "/" },
+            { name: "Careers", link: "/" },
+            { name: "Jobs", link: "/" },
+            { name: "In Press", link: "/" },
+            { name: "Gallery", link: "/" },
+        ],
+    },
+    {
+        title: "Support",
+        links: [
+            { name: "Contact Us", link: "/" },
+            { name: "Online Chat", link: "/" },
+            { name: "WhatsApp", link: "/" },
+            { name: "Telegram", link: "/" },
+            { name: "Ticketing", link: "/" },
+            { name: "Call Center", link: "/" },
+        ],
+    },
+    {
+        title: "FAQ",
+        links: [
+            { name: "Account", link: "" },
+            { name: "Booking", link: "" },
+            { name: "Payments", link: "" },
+            { name: "Returns", link: "" },
+            { name: "Privacy Policy", link: "" },
+            { name: "Terms and Condition", link: "" },
+        ],
+    },
+];

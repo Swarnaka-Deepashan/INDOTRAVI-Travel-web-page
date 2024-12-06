@@ -1,18 +1,26 @@
 import PropTypes from "prop-types";
+import { useState } from "react";
 import SearchBarTour from "./SearchBarTour";
 
 const TourImageCard = ({ image, label, text }) => {
+  const [key, setKey] = useState(0); // State to trigger re-render
+
+  // Function to re-render the component
+  const reRender = () => setKey((prevKey) => prevKey + 1);
+
   return (
-    <div className="relative max-sm:h-[40vh] max-sm:w-[80vw] sm:h-[60vh] sm:w-[80vw] lg:h-[60vh] lg:w-[35vw] xl:h-[80vh] xl:w-[35vw] rounded-2xl overflow-hidden shadow-lg transition-transform duration-300 ease-in-out transform hover:scale-[102%] hover:shadow-2xl">
+    <div
+      key={key} // Use the state key to force re-render
+      className="relative [@media(max-width:640px)_or_(max-height:640px)]:h-[20rem] [@media(max-width:640px)_or_(max-height:640px)]:w-[80vw] sm:h-[36rem] rounded-2xl overflow-hidden shadow-lg transition-transform duration-300 ease-in-out transform hover:scale-[102%] hover:shadow-2xl"
+    >
       <img src={image} alt={label} className="w-full h-full object-cover" />
       <div className="absolute inset-0 bg-gradient-to-t from-black to-transparent opacity-50"></div>
 
       <div className="flex flex-col gap-4 absolute bottom-4 text-white items-center max-sm:gap-1">
-
         <div className="px-4">
-          <SearchBarTour />
+          {/* Pass reRender function to SearchBarTour */}
+          <SearchBarTour onOrientationChange={reRender} />
         </div>
-
         <div className="px-4">
           <p className="text-base text-center font-light">{text}</p>
         </div>

@@ -31,7 +31,7 @@ const App = () => {
       <section className="xl:px-24 px-10 sm:pb-32 pb-20">
         <Blogs />
       </section>
-      <section className="">
+      <section className='pb-8 bg-black padding-x padding-t'>
         <Footer />
       </section>
     </main>

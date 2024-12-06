@@ -8,11 +8,11 @@ const Tour = () => {
     <section id="tour" className="max-container">
       <div className="flex max-lg:flex-col-reverse justify-center items-center gap-10">
 
-        <div className="">
+        <div className="flex-1">
           <TourImageCard {...tourImageDetails} />
         </div>
 
-        <div className="flex flex-col gap-4">
+        <div className="flex flex-1 flex-col gap-4">
           <div className='flex flex-col items-start max-lg:items-center'>
             <p className='lg:max-w-lg font-normal text-lg text-slate-gray'>How It Works</p>
             <h2 className='text-4xl max-md:text-3xl font-semibold'>One Click For You</h2>
