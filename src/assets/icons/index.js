@@ -20,6 +20,7 @@ import budget from './budget.svg'
 import guest from './guest.svg'
 import chevronDown from './chevron-down.svg'
 import verticalDivider from './vertical-divider.svg'
+import logo from './logo.png'
 
 export {
     arrowRight,
@@ -43,5 +44,6 @@ export {
     budget,
     guest,
     chevronDown,
-    verticalDivider
+    verticalDivider,
+    logo
 }
